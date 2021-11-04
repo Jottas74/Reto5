@@ -39,7 +39,7 @@ public class WebAudience {
     
     @Autowired
     private ServiciosAudience servicio;
-    @GetMapping("all")
+    @GetMapping("/all")
     public List <Audience> getAudience(){
         return servicio.getAll();
     }
